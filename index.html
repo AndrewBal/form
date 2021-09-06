@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/script.js"></script>
+  <title>Form</title>
+</head>
+
+<body>
+
+  <div class="container form-container">
+    <div class="form-box">
+
+
+      <form method="post" action="#" id="form">
+        <div class="page slide-page">
+          <p class="form-box__title"> Register a new user</p>
+          <div class="form-field">
+            <input class="check-input get-value" type="text" placeholder="First Name*" name="first_name">
+            <span class="error"></span>
+          </div>
+
+          <div class="form-field">
+            <input class="check-input get-value" type="text" placeholder="Last Name*" name="last_name">
+            <span class="error"></span>
+          </div>
+
+          <div class="form-field">
+            <input class="check-input get-value" type="text" placeholder="Login*" name="login">
+            <span class="error"></span>
+          </div>
+
+          <div class="form-field">
+            <input class="check-input get-value" type="email" placeholder="Email*" name="email">
+            <span class="error"></span>
+          </div>
+
+          <div class="form-field">
+            <input type="text" class="get-value" placeholder="Company Name" name="company">
+          </div>
+
+          <div class="form-field">
+            <input class="pass check-input get-value" type="password" placeholder="Password*" name="password">
+            <span class="error"></span>
+          </div>
+
+          <div class="form-field">
+            <input class="pass-confirm  check-input" type="password" placeholder="Confirm Password*"
+              name="password_confirm" id="password_confirm">
+            <span class="error"></span>
+          </div>
+
+          <div class="form-actions">
+            <button type=" " class="next" value="1" name="send_form"> Next Step</button>
+          </div>
+        </div>
+
+        <div class="page step-2">
+          <p class="form-box__title">Choose your specialization</p>
+          <div class="form-field">
+            <select class="departments get-value" name="departments">
+              <option value="" disabled selected>Departments</option>
+            </select>
+            <span class="error"></span>
+          </div>
+
+          <div class="form-field">
+            <select disabled class="vacancy get-value" name="vacancy">
+              <option value="" selected>Vacancy</option>
+            </select>
+            <span class="error"></span>
+          </div>
+
+          <div class="form-actions">
+            <button type="  " class="next toresult" value="1" name="send_form"> Next Step</button>
+          </div>
+        </div>
+        <div class="page step-3">
+          <p class="form-box__title">Check your information:</p>
+
+          <div class="info-box">
+            <p>Name:<span class="name-result"></span></p>
+            <p>Login:<span class="login-result"></span></p>
+            <p>Email:<span class="email-result"></span></p>
+            <p>Company:<span class="company-result"></span></p>
+            <p>Department:<span class="department-result"></span></p>
+            <p>Job Title:<span class="vacancy-result"></span></p>
+            <p class="add-info">Click send if everything correct. Click edit if you see error.</p>
+          </div>
+
+
+          <div class="form-actions">
+            <button type=" " class="edit" value="1" name="send_form">Edit</button>
+            <button type=" " class="next send" value="1" name="send_form">Send</button>
+          </div>
+        </div>
+        <div class="page step-4">
+          <p class="form-box__title">Thank you!</p>
+        </div>
+
+
+
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

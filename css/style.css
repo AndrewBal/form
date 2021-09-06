@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.container {
+  display: flow-root;
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+@media (min-width: 640px) {
+  .container {
+      padding-left:30px;
+      padding-right: 30px
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+      padding-left:40px;
+      padding-right: 40px
+  }
+}
+
+ .form-container {
+  -webkit-box-shadow: 1px 5px 24px 6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 5px 24px 6px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 5px 24px 6px rgba(34, 60, 80, 0.2);
+  background: #fff;
+  width: 400px;
+  overflow: hidden;
+ }
+
+ body { 
+  background: linear-gradient(169deg, rgba(130,130,130,0.6265057048209909) 0%, rgba(101,135,156,0) 40%, rgba(174,214,239,1) 100%);
+  font-family: 'Montserrat', sans-serif;
+  color:rgb(0 0 0 / 70%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+ }
+
+
+ .form-box {
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  
+   width: 100%;
+   overflow: hidden;
+
+ }
+
+ .form-box, form {
+  display: flex;
+  width: calc(100% * var(--stepNumber));
+ }
+
+ .page {
+  width: calc(100% / var(--stepNumber));
+  transition: margin-left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ .form-box {
+   padding: 20px 0;
+ }
+
+ input, select {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  margin: 6px 0;
+  width: 100%;
+ }
+
+ select {
+   width: 300px;
+ }
+
+
+ .step-2 {
+  width: calc(97% / var(--stepNumber));
+ }
+ .form-box__title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+ }
+
+
+ .form-actions {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+ }
+
+ button {
+   padding: 10px 15px;
+   color: #fff;
+   background: #4d8ae9;
+   margin: 0 5px;
+ }
+
+
+ button:hover {
+   background: #3a67ae;
+ }
+
+.form-field {
+ 
+  padding-bottom: 15px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .error {
+  color: #8d3737;
+  font-size: 13px;
+   
+  padding-left: 15px;
+  
+  display: block;
+ }
+
+ .info-box {
+   padding: 0 55px;
+   
+ }
+
+.info-box p {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.info-box span {
+  font-weight: normal;
+  padding-left: 15px;
+}
+
+p.add-info {
+  padding-top: 30px;
+  font-weight: normal;
+}
